@@ -44,12 +44,13 @@ Projeto de portfólio com dados fictícios (`meli-bi-data.TMP.*`) para demonstra
 - **Fonte única de KPIs** (02_views_kpis.sql) → reduz inconsistências entre visuais.
 - **Filtros padrão**: `ano` e `regiao` aplicados na camada SQL → painéis consistentes.
 
-<p align="center">
-  <img src="./docs/prints/clientes_ativos.png" width="45%"/>
-  <img src="./docs/prints/faturamento_mensal_2024.png" width="45%"/><br/>
-  <img src="./docs/prints/ticket_regiao.png" width="45%"/>
-  <img src="./docs/prints/funil_pedidos.png" width="45%"/><br/>
-  <img src="./docs/prints/sla_mensal.png" width="90%"/>
-</p>
+### Miniaturas
+
+![Clientes ativos](docs/prints/clientes_ativos.png)
+![Faturamento mensal 2024](docs/prints/faturamento_mensal_2024.png)
+![Ticket por região](docs/prints/ticket_regiao.png)
+![Funil de pedidos](docs/prints/funil_pedidos.png)
+![SLA mensal](docs/prints/sla_mensal.png)
+
 
 
