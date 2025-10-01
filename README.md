@@ -32,13 +32,26 @@ Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstra
 - Duplicidades de pedido → garantir unicidade.
 - Cap de tempos **0–120 dias** para SLA; refunds atrelados ao **mesmo ano** da entrega.
 
-##  Dicionário (resumo do schema)
-- `orders_kq(order_id, customer_id, order_date, status)`
-- `shipments_kq(order_id, ship_date)`
-- `deliveries_kq(order_id, delivery_date)`
-- `payments_kq(order_id, payment_date, amount)`
-- `refunds_kq(order_id, refund_date, amount)`
-- `customers_kq(customer_id, region)`
+##  Schema do Dataset
+
+O projeto utiliza as seguintes tabelas principais:
+
+- `orders_kq`
+- `customers_kq`
+- `order_items_kq`
+- `payments_kq`
+- `refunds_kq`
+- `shipments_kq`
+- `carrierskq`
+- `products_kq`
+- `inventory_kq`
+- `warehouses_kq`
+- `merchants_kq`
+
+Diagrama relacional:
+
+![Schema do Dataset](docs/prints/schema.png)
+
 
 ##  Decisões de modelagem (por quê assim?)
 - **Refunds** só contam para pedidos **Entregues** e no **mesmo ano** da entrega → evita dupla contagem.
