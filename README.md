@@ -60,12 +60,30 @@ Diagrama relacional:
 - **Filtros padrão**: `ano` e `regiao` aplicados na camada SQL → painéis consistentes.
 
 ### Miniaturas
-
+### Clientes ativos por ano
 ![Clientes ativos](docs/prints/clientes_ativos.png)
+Tendência levemente negativa entre 2021–2023, com recuperação em 2024.  
+→ Insight: reforçar aquisição de novos clientes para sustentar crescimento.
+
+### Faturamento Mensal
 ![Faturamento mensal 2024](docs/prints/faturamento_mensal_2024.png)
+Sazonalidade evidente: julho tem pico acima de 600k, enquanto fevereiro é o menor mês.  
+→ Insight: planejar estoque e campanhas promocionais alinhadas à sazonalidade.
+
+### Ticket médio por região
 ![Ticket por região](docs/prints/ticket_regiao.png)
+Diferenças regionais claras — Sudeste apresenta maior ticket médio.  
+→ Insight: ajustar precificação e mix por região.
+
+### Funil de pedidos
 ![Funil de pedidos](docs/prints/funil_pedidos.png)
+Perda significativa entre “Criado” e “Entregue” (~12% cancelados).  
+→ Insight: revisar motivos de cancelamento antes da expedição.
+
+### SLA mensal
 ![SLA mensal](docs/prints/sla_mensal.png)
+Entrega geralmente dentro de 30 dias, mas picos em meses específicos.  
+→ Insight: investigar atrasos e renegociar com transportadoras.
 
 ## Queries SQL
 - [Clientes ativos por ano](docs/sql/clientes_ativos_ano.sql)  
