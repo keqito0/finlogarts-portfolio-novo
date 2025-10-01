@@ -53,7 +53,7 @@ Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstra
 ![SLA mensal](docs/prints/sla_mensal.png)
 
 ## Queries SQL
-- [Clientes ativos por ano](sql/clientes_ativos_ano.sql)
+[Clientes ativos por ano](docs/sql/clientes_ativos_ano.sql)
 - [Retenção (Cohort)](sql/retencao_cohort.sql)
 - [Funil de pedidos](sql/funil_pedidos.sql)
 - [Ticket médio por região](sql/ticket_medio_regiao.sql)
