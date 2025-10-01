@@ -53,17 +53,17 @@ Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstra
 ![SLA mensal](docs/prints/sla_mensal.png)
 
 ## Queries SQL
-[Clientes ativos por ano](docs/sql/clientes_ativos_ano.sql)
-- [Retenção (Cohort)](sql/retencao_cohort.sql)
-- [Funil de pedidos](sql/funil_pedidos.sql)
-- [Ticket médio por região](sql/ticket_medio_regiao.sql)
-- [Top 10 produtos](sql/top10_produtos.sql)
-- [Ranking clientes por região (Top 5)](sql/ranking_clientes_regiao.sql)
-- [Faturamento mensal](sql/faturamento_mensal.sql)
-- [Pagamentos por método](sql/pagamentos_metodo.sql)
-- [SLA mensal](sql/sla_mensal.sql)
-- [SLA por transportadora](sql/sla_transportadora.sql)
-- [% Entregue vs. % Cancelado](sql/kpi_cabecalho_entregue_cancelado.sql)
+- [Clientes ativos por ano](docs/sql/clientes_ativos_ano.sql)  
+- [Retenção (Cohort)](docs/sql/retencao_cohort.sql)  
+- [Funil de pedidos](docs/sql/funil_pedidos.sql)  
+- [Ticket médio por região](docs/sql/ticket_medio_regiao.sql)  
+- [Top 10 produtos](docs/sql/top10_produtos.sql)  
+- [Ranking clientes por região (Top 5)](docs/sql/ranking_clientes_regiao.sql)  
+- [Faturamento mensal](docs/sql/faturamento_mensal.sql)  
+- [Pagamentos por método](docs/sql/pagamentos_metodo.sql)  
+- [SLA mensal](docs/sql/sla_mensal.sql)  
+- [SLA por transportadora](docs/sql/sla_transportadora.sql)  
+- [% Entregue vs. % Cancelado](docs/sql/kpi_cabecalho_entregue_cancelado.sql)  
 
 
 
