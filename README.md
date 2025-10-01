@@ -53,11 +53,20 @@ Diagrama relacional:
 ![Schema do Dataset](docs/prints/schema.png)
 
 
-##  Decisões de modelagem (por quê assim?)
-- **Refunds** só contam para pedidos **Entregues** e no **mesmo ano** da entrega → evita dupla contagem.
-- **SLA** com cap **0–120 dias** → remove outliers operacionais sem distorcer a média.
-- **Fonte única de KPIs** (02_views_kpis.sql) → reduz inconsistências entre visuais.
-- **Filtros padrão**: `ano` e `regiao` aplicados na camada SQL → painéis consistentes.
+## Decisões de modelagem (racionais)
+
+- **Refunds**: considerados apenas em pedidos *Entregues* e no *mesmo ano da entrega*.  
+  *Motivo:* garante coerência temporal e evita dupla contagem de receitas negativas.  
+
+- **SLA**: aplicado cap de *0–120 dias*.  
+  *Motivo:* remove outliers operacionais (ex.: erros de data) sem distorcer a média.  
+
+- **KPIs**: todos centralizados em `02_views_kpis.sql`.  
+  *Motivo:* fonte única reduz inconsistências entre visuais e garante padronização.  
+
+- **Filtros**: `ano` e `regiao` definidos diretamente na camada SQL.  
+  *Motivo:* assegura consistência entre gráficos e melhora performance no Looker Studio.
+
 
 ### Miniaturas
 ### Clientes ativos por ano
