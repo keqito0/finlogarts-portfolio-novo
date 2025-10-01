@@ -1,4 +1,6 @@
-# FinLogArts — BI & Analytics (BigQuery + Looker)
+# FinLogArts — BI & Analytics
+*(BigQuery + Looker Studio)*
+
 
 Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstrar **SQL (BigQuery)**, **modelagem de métricas** e **dashboard (Looker Studio)**.
 
