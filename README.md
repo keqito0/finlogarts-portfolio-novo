@@ -4,6 +4,10 @@
 
 Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstrar **SQL (BigQuery)**, **modelagem de métricas** e **dashboard (Looker Studio)**.
 
+Projeto de portfólio que simula um case real de BI: análise de clientes, vendas e logística a partir de dados no **BigQuery** com visualização no **Looker Studio**.  
+O dashboard consolida KPIs estratégicos (aquisição, retenção, receita, SLA e pagamentos) e gera insights acionáveis para áreas de negócio e operações.  
+
+
 ## 🔗 Links
 - **Dashboard (Looker Studio):** https://lookerstudio.google.com/u/0/reporting/2ef16139-c9fe-48fa-9a90-f62e3603fcd7/page/ZBcYF  (público)
 - **One-pager (PDF):** ./docs/onepager.pdf
