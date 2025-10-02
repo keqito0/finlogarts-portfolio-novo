@@ -26,11 +26,23 @@ Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstra
 - `funil_pedidos.png` — Funil de pedidos.
 - `sla_mensal.png` — Tempo médio de entrega (mês a mês).
 
-##  Checklist de qualidade (usado no projeto)
-- Datas negativas (envio < pedido) → investigar.
-- Nulos críticos (order_id, customer_id, datas) → corrigir/filtrar.
-- Duplicidades de pedido → garantir unicidade.
-- Cap de tempos **0–120 dias** para SLA; refunds atrelados ao **mesmo ano** da entrega.
+## Checklist de Qualidade (aplicado no projeto)
+
+- **Datas negativas**: casos onde `ship_date < order_date` ou `delivery_date < ship_date`.  
+  *Ação:* investigar inconsistências e descartar registros inválidos.  
+
+- **Nulos críticos**: campos essenciais (`order_id`, `customer_id`, datas) não podem ser nulos.  
+  *Ação:* corrigir upstream ou filtrar para evitar distorções.  
+
+- **Duplicidade de pedidos**: cada `order_id` deve ser único.  
+  *Ação:* aplicar DISTINCT e validar chaves primárias.  
+
+- **SLA**: limitar análise entre *0–120 dias*.  
+  *Ação:* remove outliers e garante métricas realistas.  
+
+- **Refunds**: considerados apenas no mesmo ano da entrega.  
+  *Ação:* assegura coerência temporal entre receita e devoluções.
+
 
 ##  Schema do Dataset
 
