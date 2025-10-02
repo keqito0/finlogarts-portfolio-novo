@@ -9,15 +9,25 @@ Projeto de portfólio com base educacional (`meli-bi-data.TMP.*`) para demonstra
 - **One-pager (PDF):** ./docs/onepager.pdf
 
 ##  Como reproduzir
-1. Abra o **BigQuery (Standard SQL)**.
-2. Em `/sql`, ajuste os parâmetros de período no topo dos arquivos (CTE `params` com `dt_ini` e `dt_fim`; use `regiao` se quiser filtrar).
-3. Execute na ordem:
-   - `01_base_quality_checks.sql`  → checagens de qualidade (datas negativas, nulos, duplicidades).
-   - `02_views_kpis.sql`           → **fonte única** dos KPIs de cabeçalho.
-   - `03_views_funil.sql`          → funil **Criado→Enviado→Entregue→Cancelado→Refund** por ano/região.
-   - `04_views_sla_logistica.sql`  → SLA mensal (cap 0–120 dias) + p50/p90.
-4. Conecte as views/queries no **Looker Studio** e gere os 5 visuais.
-5. Exporte os prints para `./docs/prints/` e o one-pager para `./docs/onepager.pdf`.
+
+1. **Abrir BigQuery (Standard SQL).**
+
+2. **Ajustar parâmetros** nos arquivos de `/docs/sql`:  
+   - Editar a CTE `params` no topo com `dt_ini` e `dt_fim`.  
+   - Usar `regiao` se desejar filtrar por região.
+
+3. **Executar as queries na ordem**:  
+   - `01_base_quality_checks.sql` → checagens de qualidade (datas negativas, nulos, duplicidades).  
+   - `02_views_kpis.sql` → fonte única dos KPIs de cabeçalho.  
+   - `03_views_funil.sql` → funil *Criado → Enviado → Entregue → Cancelado → Refund* por ano/região.  
+   - `04_views_sla_logistica.sql` → SLA mensal (cap 0–120 dias) + métricas p50/p90.
+
+4. **Conectar no Looker Studio** e gerar os 5 visuais principais.
+
+5. **Exportar resultados**:  
+   - Prints do painel → `./docs/prints/`  
+   - One-pager executivo → `./docs/onepager.pdf`
+
 
 ##  Visuais do painel (5)
 - `clientes_ativos.png` — Clientes ativos por ano.
