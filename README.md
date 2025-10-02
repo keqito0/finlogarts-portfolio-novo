@@ -1,4 +1,4 @@
-FinLogArts — BI & Analytics
+## FinLogArts — BI & Analytics
 (BigQuery + Looker Studio)
 
 Dashboard em BigQuery + Looker Studio para analisar clientes, vendas e logística, com foco em KPIs estratégicos e insights acionáveis.  
