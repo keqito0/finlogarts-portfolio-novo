@@ -90,6 +90,36 @@ Diagrama relacional:
   *Motivo:* assegura consistência entre gráficos e melhora performance no Looker Studio.
 
 
+## 📊 Sobre o Dashboard
+
+O painel **FinLogArts — Performance de Clientes, Vendas e Logística (2021–2024)** foi construído no Looker Studio, conectado ao BigQuery.  
+Ele responde perguntas-chave de negócio por meio de 5 blocos principais:
+
+### KPIs de Cabeçalho
+- **Clientes Ativos, Ticket Médio, % Entregue, % Cancelado, Taxa de Recompra**  
+- *Pergunta:* Qual o status geral da operação no período selecionado?  
+- *Insight:* mostra saúde da base de clientes, eficiência da entrega e fidelização.
+
+### Clientes
+- **Clientes ativos por ano** → tendência de aquisição/retenção.  
+- **Receita por Região** → mix geográfico, regiões mais lucrativas.  
+- **Dispersão (Ticket Médio × Frequência)** → segmentação de clientes por comportamento.
+
+### Produtos
+- **Top 10 Produtos (barras e donut)**  
+- *Pergunta:* Quais produtos concentram mais vendas?  
+- *Insight:* risco de dependência de poucos itens, necessidade de diversificação.
+
+### Operações (Logística)
+- **Tempo médio de entrega (mensal)** → estabilidade operacional, picos de atraso.  
+- **Funil (Criado → Entregue → Cancelado → Refund)** → onde acontecem maiores perdas.  
+- **SLA por Transportadora** → benchmarking entre parceiros logísticos (% atraso, % refund).
+
+### Financeiro
+- **Faturamento Mensal** → sazonalidade de vendas e metas.  
+- **Pagamentos por Método** → preferência de meios (Pix, Wallet, Cartão, Boleto) e impacto no custo financeiro.
+
+
 ### Miniaturas
 ### Clientes ativos por ano
 ![Clientes ativos](docs/prints/clientes_ativos.png)
